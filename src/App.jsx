@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
-    localStorage.getItem('token') ? "/" : navigate("/login");
+    // localStorage.getItem('token') ? "/" : navigate("/login");
   })
   const routes = useRoutes([
     { path: '/', element: <AdminHome /> },

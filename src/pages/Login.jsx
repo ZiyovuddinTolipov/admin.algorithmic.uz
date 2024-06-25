@@ -38,7 +38,7 @@ const Login = () => {
                 <div className="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-black/20 backdrop-blur-md border-gray-700">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                         <a href="#" className="flex items-center justify-center mb-6 text-2xl font-semibold text-white w-[100%]">
-                            mark.algorithmic.uz
+                            admin.algorithmic.uz
                         </a>
                         <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                             <label className="input input-bordered flex items-center gap-2  input-primary w-full ">
