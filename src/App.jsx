@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import Login from "./pages/Login";
 import NotFound from './pages/NotFound';
 
-import AdminHome from './admin/Home';
+import AdminHome from './pages/Home';
 
 import { Toaster } from "react-hot-toast";
 function App() {
@@ -14,7 +14,7 @@ function App() {
     // localStorage.getItem('token') ? "/" : navigate("/login");
   })
   const routes = useRoutes([
-    { path: '/', element: <AdminHome /> },
+    { path: '/dashboard/*', element: <AdminHome /> },
     { path: '/login', element: <Login /> },
     { path: '*', element: <NotFound /> }
   ]);

@@ -40,7 +40,7 @@ function Dialog(props) {
                 setSelectedRating(null)
                 setComment(null)
                 resMark.status == 200 ? document.getElementById('addAttendance').close() : toast.error("Baho qo'yilmadi");
-                resMark.status == 200 ? navigate(`/admin?school_id${searchParams.get('school_id')}&grade_id=${searchParams.get('grade_id')}`) : toast.error("Baho qo'yilmadi");
+                resMark.status == 200 ? navigate(`/dashboard/?school_id${searchParams.get('school_id')}&grade_id=${searchParams.get('grade_id')}`) : toast.error("Baho qo'yilmadi");
             } catch (error) {
                 console.error(error);
             }
