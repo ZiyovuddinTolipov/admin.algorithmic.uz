@@ -25,7 +25,7 @@ function Dialog() {
             toast.success("Mavzu qo'shildi!");
             res.data.status == 200 && window.location.reload();
             if(res.status == 200) {
-                navigate(`/?school_id=${searchParams.get('school_id')}&grade_id=${searchParams.get('grade_id')}&test=test`);
+                navigate(`/dashboard?school_id=${searchParams.get('school_id')}&grade_id=${searchParams.get('grade_id')}&test=test`);
                 document.getElementById('addColumn').close()
             }
         } catch (error) {

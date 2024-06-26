@@ -134,11 +134,11 @@ function StudentList(props) {
                         <td className='px-6 py-1 bg-black text-white'>{student.fullName}</td>
                         {dailyScorings.map((item, index) => (
                             <td key={index}
-                                onClick={() => addMark('addAttendance')}
+                                onClick={() => addMark('addAttendance')} 
                                 className='p-0'>
                                 {
                                     studentScores[student.id]?.[item.id] ? <Mark score={studentScores[student.id]?.[item.id]} /> :
-                                        <Link to={`/?school_id=${searchParams.get('school_id')}&grade_id=${searchParams.get("grade_id")}&lesson_id=${item.id}&student_id=${student.id}`} className='px-6 py-1 m-0 w-[100%] h-full bg-blue-800 cursor-pointer font-bold text-xl text-white'>
+                                        <Link to={`/dashboardo?school_id=${searchParams.get('school_id')}&grade_id=${searchParams.get("grade_id")}&lesson_id=${item.id}&student_id=${student.id}`} className='px-6 py-1 m-0 w-[100%] h-full bg-blue-800 cursor-pointer font-bold text-xl text-white'>
                                             <span>+</span>
                                         </Link>
                                 }
