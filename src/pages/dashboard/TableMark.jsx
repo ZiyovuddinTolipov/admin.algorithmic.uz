@@ -110,7 +110,7 @@ function StudentList(props) {
     };
 
     return (
-        <table className='table-students-mark text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 min-w-[100%] h-auto'>
+        <table className='table-students-mark text-sm text-left  text-gray-400 min-w-[100%] '>
             <thead>
                 <tr>
                     <th className={sty.th1}>NO</th>
