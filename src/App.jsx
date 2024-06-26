@@ -8,12 +8,21 @@ import NotFound from './pages/NotFound';
 import AdminHome from './pages/Home';
 
 import { Toaster } from "react-hot-toast";
+
+const Home = () => { 
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/dashboard")
+  })
+}
+
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
-    // localStorage.getItem('token') ? "/" : navigate("/login");
+    localStorage.getItem('user_jwt') ? "/" : navigate("/login");
   })
   const routes = useRoutes([
+    { path: '/', element: <Home /> },
     { path: '/dashboard/*', element: <AdminHome /> },
     { path: '/login', element: <Login /> },
     { path: '*', element: <NotFound /> }

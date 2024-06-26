@@ -23,7 +23,7 @@ const Login = () => {
                 res.data ? toast.success('Login successful!') : toast.error("Xatolik");
                 // console.log(res.data)
                 localStorage.setItem("user_jwt", res.data);
-                navigate('/')
+                navigate('/dashboard')
             } catch (error) {
                 toast.error("Failed to" + error);
                 console.error('Error fetching user data:', error);
