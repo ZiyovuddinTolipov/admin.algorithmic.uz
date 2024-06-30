@@ -32,6 +32,7 @@ const Home = () => {
                         <Link to='all-files' className={sty.listElement} ><FaFileArchive /><span>Hujjatlar</span></Link>
                         <Link to='add-new-election' className={sty.listElement} ><FaRegNewspaper /><span>Tanlov yaratish</span></Link>
                         <Link to='all-workers' className={sty.listElement} ><FaUser /><span>Ishchilar</span></Link>
+                        <Link to='all-workers' className={sty.listElement} ><FaUser /><span>Any menu</span></Link>
                     </ul>
                     <ul className="flex  flex-col gap-2 text-white font-semibold">
                         <Link to='add-new-user' className='px-3 py-2 bg-blue-500 hover:bg-blue-600 transition rounded-md w-[200px] flex justify-between items-center' ><span>New User</span> <FaAddressBook /></Link>
